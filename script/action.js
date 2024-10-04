@@ -1,8 +1,11 @@
+
 $(window).scroll(function(){ 
     let scrT = $(this).scrollTop();
     let winH = $(window).height();
+
     $('.leaf_box figure').each(function(){
-        let leafTop  = $(this).offset().top;
+        let leafTop  = $(this).offset().top;  //화면맨상단으로부터 잎사귀 까지의 거리값
+        console.log(leafTop);
 
         if(scrT > leafTop - winH/2){
             $(this).addClass('on')
@@ -56,13 +59,16 @@ const updateHeaderClass = () => {
     }
 };
 
-// 페이지 로드 시 스크롤을 맨 위로 설정하고 클래스 초기화
-window.addEventListener('load', () => {
-    window.scrollTo(0, 0); // 스크롤을 맨 위로 설정
-    updateHeaderClass();
-});
+
 
 // 스크롤 이벤트 리스너 추가
 window.addEventListener('scroll', () => {
     updateHeaderClass();
+});
+
+
+
+ // 페이지가 로드된 후 맨 위로 스크롤 애니메이션
+ $(window).on('load', function() {
+    $('html, body').animate({ scrollTop: 0 }, 'slow'); // 맨 위로 부드럽게 스크롤
 });

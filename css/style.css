@@ -3,7 +3,7 @@
 @import url(reset.css);
 @import url(font.css);
 
-body {background: #222222; zoom:0.75}
+body {background: #222222; zoom:0.8}
 
 
 .centerbox1340 {width: 1340px; margin: 0 auto;}
@@ -57,6 +57,7 @@ header .centerbox1340 .gnb li a {display: flex; height: 100%; align-items: cente
 #section_box .centerbox1340 .section1 .memo_box:after {content:url(../images/section1_leaf03.png);position: absolute; right: -9.5%; top: -6.5%;}
 
 #section_box .centerbox1340 .section1 .memo_box .memo {background: url(../images/section1_memo.png); background-size: cover; width: 1153px; height: 450px; background-size: cover; margin: 0 auto; display: flex; }
+
 #section_box .section1 .memo .image {width: 320px;text-align: center; margin-top: 36px;;}
 #section_box .section1 .memo .image .img {width: 100%; }
 #section_box .section1 .memo .image .name {display: flex; flex-direction: column; align-items: flex-start; color: #fff; font-size: 20px; line-height: 1.5; margin-top: 20px; margin-left: 40px;}
@@ -87,19 +88,33 @@ header .centerbox1340 .gnb li a {display: flex; height: 100%; align-items: cente
 #section_box .section2 .centerbox1340 .bg .memo_box {margin: 0 auto; background:#314833; border-radius:150px 0 0 0; padding: 100px 0 500px 0; }
 #section_box .section2 .centerbox1340 .bg .memo_box .memo {background: url(../images/section2_memo.png);background-size: cover;width: 1153px; height: 1810px; margin: 0 auto; margin-top: 100px;}
 #section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box {width: 900px; height: 1560px; margin: 0 auto; flex-direction: column; padding-top: 90px;}
-#section_box .section2 .centerbox1340 .bg .memo_box .memo  p {font-size: 85px; color: #2a381b; font-family: 'Continuous'; font-weight: bold; position: absolute; left: 300px; bottom: 650px; }
+#section_box .section2 .centerbox1340 .bg .memo_box .memo  p.btnC {font-size: 85px; color: #2a381b; font-family: 'Continuous'; font-weight: bold; position: absolute; left: 300px; bottom: 650px; }
 
+#section_box .section2 .centerbox1340 .bg .memo_box .memo li {position: relative;}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .word {color: #fff; padding: 30px; font-size: 20px; line-height: 1.8; transition: 0.5s;position: absolute; width: 400px; height: 250px; z-index: 7; top: 0px; border-radius: 10px; opacity: 0;}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo li:hover .word {top: -50px; opacity: 1;}
+
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .one2 li .word {left: -95%;}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .one2 li:nth-child(1) .word { background: rgba(5, 29, 19, 0.8)}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .one2 li:nth-child(2) .word { background: rgba(37, 20, 29, 0.8)}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .one2 li .word {left: -95%;}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .two2 li:nth-child(1) .word { background: rgba(29, 5, 10, 0.8)}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .two2 li:nth-child(2) .word { background: rgba(10, 5, 37, 0.8)}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .two2 li .word {right: -95%;}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .three2 li:nth-child(1) .word {background: rgba(6, 27, 41, 0.8);}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .three2 li .word {right: -95%;}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .three2 li:nth-child(1) .word {}
 #section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box .one2 {float: left;}
-#section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box .one2 .img1 {width: 438px; height: 608px; border-radius: 15px; overflow: hidden;}
-#section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box .one2 .img2 {width: 438px; height: 666px; border-radius: 15px; overflow: hidden; margin-top: 22px;}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box .one2 .img1 {width: 438px; height: 608px; border-radius: 15px; }
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box .one2 .img2 {width: 438px; height: 666px; border-radius: 15px;  margin-top: 22px;}
 #section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box .two2 {float: left; margin-left: 22px;}
-#section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box .two2 .img3 {width: 438px; height: 735px; border-radius: 15px; overflow: hidden;}
-#section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box .two2 .img4 {width: 438px; height: 324px; border-radius: 15px; overflow: hidden; margin-top: 22px;}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box .two2 .img3 {width: 438px; height: 735px; border-radius: 15px; }
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box .two2 .img4 {width: 438px; height: 324px; border-radius: 15px;  margin-top: 22px;}
 #section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box .three2 {float: left; margin-left: 22px;}
-#section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box .three2 .img5 {width: 438px; height: 529px; margin-top: 22px; border-radius: 15px; overflow: hidden;}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box .three2 .img5 {width: 438px; height: 529px; margin-top: 22px; border-radius: 15px; }
 
-#section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box img {margin-bottom: 22px; transition: transform 0.3s ease; }
-#section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box img:hover {transform: scale(1.1);}
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box a img {margin-bottom: 22px; transition: transform 0.3s ease; }
+#section_box .section2 .centerbox1340 .bg .memo_box .memo .html_box a:hover img {transform: scale(1.03);}
 
 
 
@@ -201,7 +216,7 @@ footer h2 {color: #fff; font-family: 'Continuous'; font-size: 100px; display: fl
   10% {transform: rotate(-7deg);}
   20% {transform: rotate(0);}
   30% {transform: rotate(5deg);}
-  100% {transform: rotate(o);}
+  100% {transform: rotate(0);}
 }
 .leaf_box figure.on2 {animation: leaf2 0.7s forwards alternate;}
 @keyframes leaf2 {
@@ -276,7 +291,7 @@ footer h2 {color: #fff; font-family: 'Continuous'; font-size: 100px; display: fl
 .leaf_box .leaf20.on2::before {display: none;}
 .leaf_box .leaf20.on2:after {display: none;}
 
-.profile_box {position: fixed; width: 100%; height: 100vh; left: 0; top: 0; background: rgba(36,45,24,0.9); z-index: 10; display: none;}
+.profile_box {position: fixed; width: 200%; height: 200vh; left: 0; top: 0; background: rgba(36,45,24,0.9); z-index: 10; display: none;}
 .profile_box .profile {position: fixed; width: 1200px; height: 600px; left: 50%; top: 50%; transform: translate(-50%,-50%) scale(0); background: #ddd; border-radius: 30px; padding: 50px; box-sizing: border-box; transition: 0.5s;}
 .profile_box.on .profile {transform: translate(-50%,-50%) scale(1);}
 .profile_box .close {position: fixed; width: 50px; height: 50px; right: 100px; top: 100px;background: #ddd; border-radius: 30px; cursor: pointer;}
